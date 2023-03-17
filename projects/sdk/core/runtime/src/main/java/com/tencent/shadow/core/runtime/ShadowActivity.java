@@ -64,6 +64,9 @@ public class ShadowActivity extends PluginActivity {
         hostActivityDelegator.overridePendingTransition(enterAnim, exitAnim);
     }
 
+    public boolean isLaunchedFromBubble() {
+        return super.isLaunchedFromBubble();
+    }
 
     @Override
     public void startActivityForResult(Intent intent, int requestCode) {
